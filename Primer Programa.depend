@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1600483284 source:c:\users\josé vela\documents\proyectos y cursos\c y c++ glut\primer programa\main.cpp
+	<windows.h>
+	<C:\GLUT\include\GL\glut.h>
+
+1600480126 c:\glut\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+893401200 c:\glut\include\gl\gl.h
+
+893401200 c:\glut\include\gl\glu.h
+	<GL/gl.h>
+
