@@ -14,30 +14,40 @@ void dibujar() //Metodo de dibujo en el entorno de trabajo
 {
     glClear(GL_COLOR_BUFFER_BIT); // limpia la pantalla
 
-    glPointSize(4);
-    /*glBegin(GL_POINTS);
-        glColor3f(1,1,1);
-        //glVertex2d(320,240);
-        for(int i=0; i<=640; i+=4){
+
+    // ------------------------DIBUJANDO PUNTOS ----------------------------------------
+    /*glPointSize(4); // Tamaño en pixeles del punto
+    glBegin(GL_POINTS); // GL_POINTS, especifica que se dibujaran puntos
+        glColor3f(1,1,1); // Color de los pixeles
+        glVertex2d(200,200); // Dibuja un punto en las coordenadas especificadas.
+        for(int i=0; i<=640; i+=4){ // El ciclo for ayuda a dibujar una serie de puntos, formando lineas (plano cartesiano)
             glVertex2d(0+i, 220);
             glVertex2d(320, 0+i);
         }
     glEnd();*/
+    // -----------------------------------------------------------------------------------
 
+
+    // ------------------------DIBUJANDO LINEAS ------------------------------------------
     /*glLineWidth(5);
-    glBegin(GL_LINES);
+    glBegin(GL_LINES); // GL_LINES ME PERMITE UNIR LINEAS DESDE UN PUNTO INICIAL A UN PUNTO FINAL
         glVertex2i(10,100);
         glVertex2i(600,100);
         glColor3f(1,1,0);
     glEnd();*/
+    // -----------------------------------------------------------------------------------
 
+
+
+    // ------------------------DIBUJANDO POLÍGONOS Y FIGURAS ------------------------------------------
     glColor3f(1,1,0);
     glLineWidth(5);
-    glBegin(GL_POLYGON); // GL_LINE_STRIP, GL_LINE_LOOP, GL_ GL_POLYGON, ETC.
+    glBegin(GL_POLYGON); // GL_LINE_STRIP, GL_LINE_LOOP, GL_ GL_POLYGON, ETC. Intenta con cada una y observa lo que sucede.
         glVertex2i(500,20);
         glVertex2i(500,300);
         glVertex2i(100,300);
     glEnd();
+    // -----------------------------------------------------------------------------------
 
     glFlush(); // Dibuja a pantalla las funciones de dibujo
 }
